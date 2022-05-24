@@ -1,5 +1,5 @@
 import React from 'react'
-import getData from '../utils/data'
+import {getData} from '../utils/data'
 
 export async function getStaticProps(){
     const data=getData();
@@ -16,7 +16,7 @@ export default function Data({data}){
     console.log({data})
     return (
         <div>
-           {data}
+           hello
         </div>
     )
 }
