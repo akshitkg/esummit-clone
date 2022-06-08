@@ -1,1 +1,1 @@
-GET https://api.plos.org/search?q=title:%22Drosophila%22%20and%20body:%22RNA%22&fl=id,abstract&wt=json&indent=on
+GET https://api.esummit.in/events/all
