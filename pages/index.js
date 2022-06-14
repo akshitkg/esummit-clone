@@ -8,13 +8,14 @@ export default function Home(dataProp) {
   const data = dataProp.dataProp;
   return (
     <div>
-      {console.log(data)}
+      {/* {console.log(data)} */}
       <ul>
         {data.map((prop) => {
           return <li key={prop.id}>{prop.event_name}</li>;
-          console.log(prop);
+          // console.log(prop);
         })}
       </ul>
+      <Cards/>
     </div>
   );
 }
