@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Card(props) {
   const dataProps = props.props;
   return (
-    <div className="bg-pink border-2 border-yellow w-full mr-[3%] ml-[3%] flex flex-row flex-wrap justify-center">
+    <div className="bg-transparent w-full mr-[3%] ml-[3%] flex flex-row flex-wrap justify-center">
       {dataProps.map((dataElement) => {
         const card_description = dataElement.card_description.replace(
           /(<([^>]+)>)/gi,
@@ -30,13 +30,9 @@ export default function Card(props) {
               height="400"
             />
 
-            <div className="bg-golden rounded-br-[64px]">
-              <h3 className="text-white">{dataElement.event_name}</h3>
-              <div className="bg-violet bottom-0 overflow-hidden w-full hover:transition-all">
-                <div className=" flex border-green border-2 flex-col justify-between overflow-scroll">
-                  <p>{card_description}</p>
-                </div>
-              </div>
+            <div className="bg-golden rounded-br-[64px] h-[40%] flex flex-col p-2">
+              <h3 className="text-black text-2xl font-weight mb-3">{dataElement.event_name}</h3>
+              <p>{card_description}</p>
             </div>
           </div>
         );

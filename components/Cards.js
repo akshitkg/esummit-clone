@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { getData } from "../utils/get-data";
-import Card from './Card'
+import Card from "./Card";
 
 export default function Cards() {
   const [data, setData] = useState([]);
@@ -13,14 +13,10 @@ export default function Cards() {
     }
     fetchData();
   }, []);
-  
+
   return (
-    <div className="h-auto w-full p-0 flex justify-center content-center bg-green border-4 border-violet">
-
-      <Card props={data}/> 
+    <div className="h-auto w-full p-0 flex justify-center content-center bg-transparent">
+      <Card props={data} />
     </div>
-  )
-
+  );
 }
-
-
