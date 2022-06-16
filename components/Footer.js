@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="bg-black text-white flex flex-row justify-between p-6">
       <div className="basis-1/5 p-4 flex flex-col justify-between">
-        <Image src="/Esummitlogofinal.webp" width={150} height={50}></Image>
+        <Image alt={'The Universe'} src="/Esummitlogofinal.webp" width={150} height={50}></Image>
         <div>
           <h3 className="text-xl font-weight">EMAIL</h3>
           <p>esummit@iitr.ac.in</p>
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="basis-1/5 p-4 flex flex-col justify-between">
-        <Image className="p-1" src="/Ecell_logo.webp" width={150} height={50}></Image>
+        <Image alt={'The Universe'} className="p-1" src="/Ecell_logo.webp" width={150} height={50}></Image>
         <div className="p-3">
           <h2 className="text-2xl font-weight mt-3 mb-3">PHONE</h2>
           Daksh:

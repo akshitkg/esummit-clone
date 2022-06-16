@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <div className="bg-black w-full p-2 fixed top-0 z-10 flex flex-row justify-between">
-      <Image src="/Esummitlogofinal.webp" width={150} height={50} />
+      <Image alt={'The Universe'} src="/Esummitlogofinal.webp" width={150} height={50} />
       <ul className="flex flex-row justify-between basis-1/3 items-center">
         <li className="text-white">
           <Link href="#">

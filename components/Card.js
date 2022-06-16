@@ -24,6 +24,7 @@ export default function Card(props) {
             <Image
               className="object-cover w-full h-full relative rounded-tl-[64px] rounded-tr-[16px]"
               key={dataElement.id}
+              alt={'The Universe'}
               src={dataElement.card_image}
               unoptimized={true}
               width="90"
