@@ -23,7 +23,7 @@ export default function Card(props) {
           <div className=" border-t-2 border-l-2 border-r-2 border-b-2 border-golden rounded-tl-[64px] rounded-tr-[16px] rounded-br-[64px] basis-1/4 m-[3%] h- w-full flex flex-col relative">
             <Image
               className="object-cover w-full h-full relative rounded-tl-[64px] rounded-tr-[16px]"
-              key={dataElement.card_image}
+              key={dataElement.id}
               src={dataElement.card_image}
               unoptimized={true}
               width="90"
